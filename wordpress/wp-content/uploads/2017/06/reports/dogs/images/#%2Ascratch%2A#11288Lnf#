@@ -1,0 +1,30 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+
+
+    
+keepers = [
+    "images/cpratt.jpg",
+    "images/cpratt3.jpg",
+    "images/cpratt4.jpg",
+    
+    "images/bmurray.jpg",
+    "images/bmurray2.jpg",    
+    
+    "images/bmurray4.jpg",    
+    "images/bmurray6.jpg",    
+    
+    "images/jroberts.png",
+    "images/jroberts2.png",
+    "images/jroberts3.png"
+]
+
+
+[0.74820,
+ 0.75913,
+ 0.01168,
+ 0.77605,
+ 0.77590,
+ 0.78892,
+ 0.75225,
