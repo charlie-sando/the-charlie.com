@@ -1,0 +1,593 @@
+<style>
+    table {
+        margin: 1em auto;
+        max-width: 500px;
+    }
+
+    td {
+        height: 45px;
+        width: 45px;
+        border: 1px solid;
+        text-align: center;
+    }
+
+    td:first-child {
+        border-left: solid;
+    }
+
+    td:nth-child(3n) {
+        border-right: solid;
+    }
+
+    tr:first-child {
+        border-top: solid;
+    }
+
+    tr:nth-child(3n) td {
+        border-bottom: solid;
+    }
+
+    a {
+        color: #e27c45;
+    }
+
+    .redify {
+        background-color: #e2471c;
+    }
+
+    .greenify {
+        background-color: #5b8416;
+    }
+
+    .orangify {
+        background-color: #e27c45;
+
+    }
+
+    .redify div,
+    .greenify div,
+    .orangify div {
+        color: white !important;
+    }
+
+</style>
+
+<div style="">
+    <div style="margin-left: 32%;margin-top: 30px;">
+
+        <div style="">
+            <a href="#" onclick="load('hard');">Hardest</a> &nbsp;
+            <a href="#" onclick="load('medium');">Medium</a> &nbsp;
+            <a href="#" onclick="load('easy');">Easy</a>
+        </div>
+
+        <table>
+            <tr>
+                <td id="A1" class="grid_item"></td>
+                <td id="B1" class="grid_item"></td>
+                <td id="C1" class="grid_item"></td>
+                <td id="D1" class="grid_item"></td>
+                <td id="E1" class="grid_item"></td>
+                <td id="F1" class="grid_item"></td>
+                <td id="G1" class="grid_item"></td>
+                <td id="H1" class="grid_item"></td>
+                <td id="I1" class="grid_item"></td>
+            </tr>
+
+            <tr>
+                <td id="A2" class="grid_item"></td>
+                <td id="B2" class="grid_item"></td>
+                <td id="C2" class="grid_item"></td>
+                <td id="D2" class="grid_item"></td>
+                <td id="E2" class="grid_item"></td>
+                <td id="F2" class="grid_item"></td>
+                <td id="G2" class="grid_item"></td>
+                <td id="H2" class="grid_item"></td>
+                <td id="I2" class="grid_item"></td>
+            </tr>
+            <tr>
+                <td id="A3" class="grid_item"></td>
+                <td id="B3" class="grid_item"></td>
+                <td id="C3" class="grid_item"></td>
+                <td id="D3" class="grid_item"></td>
+                <td id="E3" class="grid_item"></td>
+                <td id="F3" class="grid_item"></td>
+                <td id="G3" class="grid_item"></td>
+                <td id="H3" class="grid_item"></td>
+                <td id="I3" class="grid_item"></td>
+            </tr>
+            <tr>
+                <td id="A4" class="grid_item"></td>
+                <td id="B4" class="grid_item"></td>
+                <td id="C4" class="grid_item"></td>
+                <td id="D4" class="grid_item"></td>
+                <td id="E4" class="grid_item"></td>
+                <td id="F4" class="grid_item"></td>
+                <td id="G4" class="grid_item"></td>
+                <td id="H4" class="grid_item"></td>
+                <td id="I4" class="grid_item"></td>
+            </tr>
+            <tr>
+                <td id="A5" class="grid_item"></td>
+                <td id="B5" class="grid_item"></td>
+                <td id="C5" class="grid_item"></td>
+                <td id="D5" class="grid_item"></td>
+                <td id="E5" class="grid_item"></td>
+                <td id="F5" class="grid_item"></td>
+                <td id="G5" class="grid_item"></td>
+                <td id="H5" class="grid_item"></td>
+                <td id="I5" class="grid_item"></td>
+            </tr>
+            <tr>
+                <td id="A6" class="grid_item"></td>
+                <td id="B6" class="grid_item"></td>
+                <td id="C6" class="grid_item"></td>
+                <td id="D6" class="grid_item"></td>
+                <td id="E6" class="grid_item"></td>
+                <td id="F6" class="grid_item"></td>
+                <td id="G6" class="grid_item"></td>
+                <td id="H6" class="grid_item"></td>
+                <td id="I6" class="grid_item"></td>
+            </tr>
+            <tr>
+                <td id="A7" class="grid_item"></td>
+                <td id="B7" class="grid_item"></td>
+                <td id="C7" class="grid_item"></td>
+                <td id="D7" class="grid_item"></td>
+                <td id="E7" class="grid_item"></td>
+                <td id="F7" class="grid_item"></td>
+                <td id="G7" class="grid_item"></td>
+                <td id="H7" class="grid_item"></td>
+                <td id="I7" class="grid_item"></td>
+            </tr>
+            <tr>
+                <td id="A8" class="grid_item"></td>
+                <td id="B8" class="grid_item"></td>
+                <td id="C8" class="grid_item"></td>
+                <td id="D8" class="grid_item"></td>
+                <td id="E8" class="grid_item"></td>
+                <td id="F8" class="grid_item"></td>
+                <td id="G8" class="grid_item"></td>
+                <td id="H8" class="grid_item"></td>
+                <td id="I8" class="grid_item"></td>
+            </tr>
+            <tr>
+                <td id="A9" class="grid_item"></td>
+                <td id="B9" class="grid_item"></td>
+                <td id="C9" class="grid_item"></td>
+                <td id="D9" class="grid_item"></td>
+                <td id="E9" class="grid_item"></td>
+                <td id="F9" class="grid_item"></td>
+                <td id="G9" class="grid_item"></td>
+                <td id="H9" class="grid_item"></td>
+                <td id="I9" class="grid_item"></td>
+            </tr>
+        </table>
+
+        <div>
+            <input type="button" value="Slower" style="color: red;" onclick="slower()"></button>
+            &nbsp;
+            <input type="button" value="Faster" style="color: green;" onclick="faster()"></button>
+            <br/>
+        </div>
+    </div>
+
+    </body>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script>
+        var G_SPEED = 250
+        var G_LEVEL = "easy"
+        var G_BREAK_LOOP = false
+
+        function faster() {
+            G_SPEED -= 50;
+        }
+
+        function slower() {
+            G_SPEED += 50
+
+        }
+
+        function updateSpeed() {
+            var speed = $('#speed').val()
+            alert(speed)
+        }
+
+        function load(type, skip) {
+            if (!skip) {
+                G_BREAK_LOOP = true
+                var letter = 'A'
+                for (var i = 1; i < 10; i++) {
+                    for (var j = 1; j < 10; j++) {
+                        var idx = letter + "" + j
+                        $('#' + idx).html('')
+                    }
+                    letter = nextChar(letter)
+                }
+            }
+            G_LEVEL = type
+
+            var med_grid = '2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3';
+            var easy_grid = '....8....27.....54.95...81...98.64...2.4.3.6...69.51...17...62.46.....38....9....'
+            var hard_grid = '8..........36......7..9.2...5...7.......457.....1...3...1....68..85...1..9....4..'
+            var easy_vals = {
+                'G7': '6',
+                'G6': '8',
+                'G5': '4',
+                'G4': '3',
+                'G3': '7',
+                'G2': '1',
+                'G1': '9',
+                'G9': '5',
+                'G8': '2',
+                'C9': '7',
+                'C8': '1',
+                'C3': '5',
+                'C2': '9',
+                'C1': '6',
+                'C7': '8',
+                'C6': '4',
+                'C5': '3',
+                'A4': '5',
+                'A9': '6',
+                'A8': '9',
+                'F1': '7',
+                'F2': '4',
+                'F3': '6',
+                'F4': '9',
+                'F5': '2',
+                'F6': '5',
+                'F7': '1',
+                'F8': '8',
+                'F9': '3',
+                'B4': '1',
+                'B5': '6',
+                'B6': '9',
+                'B7': '3',
+                'E9': '9',
+                'B1': '2',
+                'B2': '7',
+                'B3': '8',
+                'C4': '2',
+                'B8': '5',
+                'B9': '4',
+                'I9': '1',
+                'I8': '4',
+                'I1': '5',
+                'I3': '3',
+                'I2': '8',
+                'I5': '9',
+                'I4': '6',
+                'I7': '7',
+                'I6': '2',
+                'A1': '1',
+                'A3': '4',
+                'A2': '3',
+                'A5': '8',
+                'E8': '6',
+                'A7': '2',
+                'A6': '7',
+                'E5': '7',
+                'E4': '4',
+                'E7': '5',
+                'E6': '3',
+                'E1': '8',
+                'E3': '1',
+                'E2': '2',
+                'H8': '3',
+                'H9': '8',
+                'H2': '6',
+                'H3': '2',
+                'H1': '4',
+                'H6': '1',
+                'H7': '9',
+                'H4': '7',
+                'H5': '5',
+                'D8': '7',
+                'D9': '2',
+                'D6': '6',
+                'D7': '4',
+                'D4': '8',
+                'D5': '1',
+                'D2': '5',
+                'D3': '9',
+                'D1': '3'
+            };
+            var hard_vals = {
+                'G7': '3',
+                'G6': '4',
+                'G5': '7',
+                'G4': '9',
+                'G3': '1',
+                'G2': '2',
+                'G1': '5',
+                'G9': '8',
+                'G8': '6',
+                'C9': '3',
+                'C8': '8',
+                'C3': '5',
+                'C2': '7',
+                'C1': '6',
+                'C7': '2',
+                'C6': '1',
+                'C5': '9',
+                'C4': '4',
+                'A9': '9',
+                'A8': '4',
+                'F1': '2',
+                'F2': '8',
+                'F3': '7',
+                'F4': '1',
+                'F5': '6',
+                'F6': '9',
+                'F7': '5',
+                'F8': '3',
+                'F9': '4',
+                'B4': '6',
+                'B5': '8',
+                'B6': '2',
+                'B7': '1',
+                'B1': '9',
+                'B2': '4',
+                'B3': '3',
+                'B8': '7',
+                'B9': '5',
+                'I9': '2',
+                'I8': '5',
+                'I1': '7',
+                'I3': '6',
+                'I2': '9',
+                'I5': '1',
+                'I4': '3',
+                'I7': '4',
+                'I6': '8',
+                'A1': '8',
+                'A3': '2',
+                'A2': '1',
+                'E9': '1',
+                'A4': '7',
+                'A7': '6',
+                'A6': '3',
+                'E5': '4',
+                'E4': '8',
+                'E7': '7',
+                'E6': '5',
+                'E1': '3',
+                'E3': '9',
+                'E2': '6',
+                'E8': '2',
+                'A5': '5',
+                'H8': '1',
+                'H9': '7',
+                'H2': '3',
+                'H3': '8',
+                'H1': '4',
+                'H6': '6',
+                'H7': '9',
+                'H4': '5',
+                'H5': '2',
+                'D8': '9',
+                'D9': '6',
+                'D6': '7',
+                'D7': '8',
+                'D4': '2',
+                'D5': '3',
+                'D2': '5',
+                'D3': '4',
+                'D1': '1'
+            };
+            var med_vals = {
+                'G7': '8',
+                'G6': '1',
+                'G5': '6',
+                'G4': '3',
+                'G3': '7',
+                'G2': '4',
+                'G1': '9',
+                'G9': '5',
+                'G8': '2',
+                'C9': '4',
+                'C8': '7',
+                'C3': '1',
+                'C2': '6',
+                'C1': '5',
+                'C7': '3',
+                'C6': '9',
+                'C5': '2',
+                'C4': '8',
+                'A9': '1',
+                'A8': '5',
+                'F1': '1',
+                'F2': '2',
+                'F3': '9',
+                'F4': '6',
+                'F5': '5',
+                'F6': '7',
+                'F7': '4',
+                'F8': '3',
+                'F9': '8',
+                'B4': '5',
+                'B5': '1',
+                'B6': '6',
+                'B7': '2',
+                'B1': '4',
+                'B2': '7',
+                'B3': '3',
+                'B8': '8',
+                'B9': '9',
+                'I9': '3',
+                'I8': '4',
+                'I1': '6',
+                'I3': '2',
+                'I2': '1',
+                'I5': '8',
+                'I4': '9',
+                'I7': '7',
+                'I6': '5',
+                'A1': '2',
+                'A3': '8',
+                'A2': '9',
+                'E9': '7',
+                'A4': '7',
+                'A7': '6',
+                'A6': '3',
+                'E5': '9',
+                'E4': '1',
+                'E7': '5',
+                'E6': '2',
+                'E1': '3',
+                'E3': '4',
+                'E2': '8',
+                'E8': '6',
+                'A5': '4',
+                'H8': '1',
+                'H9': '6',
+                'H2': '3',
+                'H3': '5',
+                'H1': '8',
+                'H6': '4',
+                'H7': '9',
+                'H4': '2',
+                'H5': '7',
+                'D8': '9',
+                'D9': '2',
+                'D6': '8',
+                'D7': '1',
+                'D4': '4',
+                'D5': '3',
+                'D2': '5',
+                'D3': '6',
+                'D1': '7'
+            }
+
+            orangify()
+            setTimeout(function () {
+                G_BREAK_LOOP = false
+                whitify();
+                if (type == "easy") {
+                    loadGrid(easy_grid);
+                    play(easy_grid, shuffleArray(shuffleArray(easy_vals)));
+                }
+                else if (type == "hard") {
+                    loadGrid(hard_grid);
+                    play(hard_grid, shuffleArray(shuffleArray(hard_vals)));
+                }
+                else if (type == "medium") {
+                    loadGrid(med_grid);
+                    play(med_grid, shuffleArray(shuffleArray(med_vals)));
+                }
+            }, 1000)
+
+
+        }
+
+        function reset() {
+            G_BREAK_LOOP = false
+        }
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            return array;
+        }
+        function nextChar(c) {
+            return String.fromCharCode(c.charCodeAt(0) + 1);
+        }
+
+        function getColor() {
+            if (G_LEVEL == "hard") return "#e2471c"
+            if (G_LEVEL == "medium") return "#e27c45"
+            if (G_LEVEL == "easy") return "#5b8416"
+        }
+        function setBox(idx, ch, showAnimation) {
+            var val = "<div style='font-weight: bold;color: " + getColor() + ";text-decoration: underline'>" + ch + "</div>"
+            if (showAnimation) {
+                $('#' + idx).hide().html(val).fadeToggle(G_SPEED)
+            }
+            else {
+                $('#' + idx).html(val)
+            }
+
+        }
+
+        function orangify() {
+            if (G_LEVEL == "hard") $(".grid_item").addClass('redify')
+            if (G_LEVEL == "medium") $(".grid_item").addClass('orangify')
+            if (G_LEVEL == "easy") $(".grid_item").addClass('greenify')
+
+        }
+
+        function whitify() {
+
+            $(".grid_item").removeClass('orangify')
+            $(".grid_item").removeClass('redify')
+            $(".grid_item").removeClass('greenify')
+            $(".grid_item").html("_")
+
+        }
+
+        function loadGrid(str) {
+            var letter = "A"
+            var counter = 0
+            for (i = 0; i < str.length; i++) {
+                if (i % 9 == 0 && i != 0) {
+                    letter = nextChar(letter)
+                    counter = 0
+                }
+                counter++
+                var ch = str[i] == '.' ? '_' : str[i]
+                var idx = letter + "" + counter;
+                setBox(idx, ch)
+
+
+            }
+        }
+
+        function play(grid, vals) {
+            for (var v in grid) {
+                if (v != '.') {
+                    delete vals[v]
+                }
+            }
+
+            var keys = []
+            for (var key in vals) {
+                keys.push(key);
+            }
+            replay(shuffleArray(keys), vals)
+        }
+
+        function replay(keys, vals) {
+
+
+            (function theLoop(keys, vals, i) {
+                setTimeout(function () {
+                    if (G_BREAK_LOOP) {
+                        reset()
+                    }
+                    else {
+                        var idx = keys[i]
+                        if (i-- > -1) {          // If i > 0, keep going
+                            theLoop(keys, vals, i);       // Call the loop again, and pass it the current value of i
+                            setBox(idx, vals[idx], true, G_SPEED)
+                        }
+                        else {
+                            orangify();
+                        }
+                    }
+                }, G_SPEED);
+            })(keys, vals, keys.length - 1);
+
+        }
+
+        load('easy', true)
+
+
+    </script>
+</div>
